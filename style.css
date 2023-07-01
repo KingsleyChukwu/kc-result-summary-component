@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,800;1,500&family=Outfit:wght@300;400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&family=Raleway:ital,wght@0,500;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --gradient-slate-blue: hsl(252, 100%, 67%);
+    --gradient-royal-blue: hsl(241, 81%, 54%);
+    --circle-violet-blue: hsla(256, 72%, 46%, 1);
+    --circle-persian-blue: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    background-color: var(--white);
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--white);
+    width: 450px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 0 30px var(--pale-blue);
+}
+
+.card section {
+    flex-basis: 50%;
+}
+
+.card .left-section {
+    background: linear-gradient(var(--gradient-slate-blue), var(--gradient-royal-blue));
+    border-radius: 13px;
+    padding: 28px 0;
+    text-align: center;
+    color: var(--white);
+    padding: 30px;
+}
+
+.left-section p {
+    color: var(--light-lavender);
+    font-size: 11px;
+}
+
+.left-section .result-heading {
+    font-size: 16px;
+    color: var(--light-lavender);;
+    font-weight: 500;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(var(--circle-violet-blue), var(--circle-persian-blue));
+    margin: 20px auto;
+}
+
+.circle .percent {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 30px 0 10px;
+    transform: translateY(30%);
+}
+
+.great {
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+
+.card .right-section {
+    padding: 30px 20px;
+}
+
+.right-section h4 {
+    padding: 0 0 20px;
+}
+
+.right-section .table .table-rows {
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-rows p {
+    font-size: 13px;
+}
+
+.table-rows p:last-of-type {
+    color: black;
+    font-weight: 800;
+}
+
+.table-rows p:last-of-type span {
+    color: gray;
+}
+
+.table-rows p:first-of-type {
+    display: flex;
+    align-items: center;
+}
+
+.table-rows p:first-of-type img {
+    margin-right: 7px;
+    width: 13px;
+}
+
+.table-rows:nth-child(1) {
+    color: var(--light-red);
+    background-color: hsl(0, 35%, 94%);
+}
+
+.table-rows:nth-child(2) {
+    color: var(--orange-yellow);
+    background: hsl(38, 78%, 91%);
+}
+
+.table-rows:nth-child(3) {
+    color: var(--green-teal);
+    background: hsl(166, 55%, 94%);
+}
+
+.table-rows:nth-child(4) {
+    color: var(--cobalt-blue);
+    background: hsl(236, 80%, 96%);
+}
+
+button {
+    width: 100%;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: var(--dark-gray-blue);
+    color: var(--white);
+    margin-top: 18px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    background: linear-gradient(var(--gradient-slate-blue), var(--gradient-royal-blue));;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    font-size: 12px;
+}
+
+.attribution a {
+    color: var(--gradient-royal-blue);
+}
